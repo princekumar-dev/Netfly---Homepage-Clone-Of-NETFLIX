@@ -1,0 +1,1087 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.main {
+    background-image: url("bg/netflixbackgrund.jpg");
+    height: 110vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 100vh);
+}
+
+.main .box {
+    height: 110vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.78;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    padding-top: 16px;
+    max-width: 86.25vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+    align-content: center;
+}
+
+nav img {
+    height: 44.5px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+nav select {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero span {
+    display: block;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    transform: translateY(-90px);
+}
+
+.hero span:nth-child(1) {
+    margin-bottom: 0;
+}
+
+.hero span:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 42.5px;
+    font-weight: 725;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: .2px;
+}
+
+.hero span:nth-child(3) {
+    font-size: 20px;
+    font-weight: 475;
+    margin-bottom: 0px;
+    line-height: 1.5px;
+    transform: translateY(-90px);
+}
+
+.hero span:nth-child(4) {
+    font-size: 20px;
+    font-weight: 475;
+    margin-bottom: 0px;
+    line-height: 1.4;
+    max-width: 650px;
+    transform: translateY(-50px);
+}
+
+.btn {
+    background-color: rgba(23, 23, 23, 0.85);
+    color: white;
+    padding: auto;
+    border-radius: 6px;
+    font-weight: 450;
+    font-size: 190px;
+    border: white 1px solid;
+    outline: none;
+    cursor: pointer;
+    height: 35px;
+    width: 85px;
+}
+
+select.btn {
+    background-color: rgba(23, 23, 23, 0.85);
+    color: white;
+    padding: auto;
+    padding-left: 8.5px;
+    border-radius: 6px;
+    font-weight: 450;
+    font-size: 15.5px;
+    border: white 1px solid;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='white' d='M8 11L4 7h8l-4 4z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    padding-right: 35px;
+    min-width: 125px;
+    position: relative;
+    z-index: 10;
+}
+
+select.btn option {
+    background-color: rgba(255, 254, 254, 0.95);
+    color: black;
+    padding: 8px;
+    border: white 1px solid;
+    outline: none;
+
+}
+
+select.btn option[disabled] {
+    display: none;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 16px 50px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 450;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btn-red svg {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    padding: auto;
+    border-radius: 6px;
+    font-weight: 450;
+    font-size: 15.5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 35px;
+    width: 85px;
+}
+
+.main input {
+    padding: 16px 56px 18px 12px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 450;
+    background-color: rgba(23, 23, 23, 0.85);
+    border: white 1px solid;
+    color: white;
+    width: 350px;
+    height: 24px;
+}
+
+.main input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 450;
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    gap: 8px;
+    transform: translateY(-30px);
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.trending-section {
+    background-color: #010000;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0px;
+}
+
+.trending-section::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 800px;
+    height: 600px;
+    background: radial-gradient(ellipse at center, rgba(0, 100, 255, 0.4) 0%, rgba(0, 50, 150, 0.3) 40%, transparent 70%);
+    filter: blur(100px);
+    z-index: 1;
+    transform: translateY(-550px);
+}
+
+.trending-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(90deg, #e50914 0%, #ff6b6b 50%, #e50914 100%);
+    clip-path: ellipse(200% 100% at 50% 100%);
+    transform: translateY(-37.5px);
+}
+
+.trending-header {
+    max-width: 86.25vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.trending-header h1 {
+    color: white;
+    font-size: 28px;
+    letter-spacing: .2px;
+    font-weight: 450;
+    margin: 0 0 30px 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 0 105px;
+    overflow: visible;
+    height: 280px;
+    transform: translateY(-24px);
+}
+
+.movie-carousel {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 20px 20px 40px 12px;
+    position: relative;
+    z-index: 2;
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.movie-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    background-color: rgba(42, 42, 42, 0.6);
+    color: white;
+    border: none;
+    width: 28px;
+    height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 4;
+    font-size: 24px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.carousel-nav:hover {
+    background-color: rgba(42, 42, 42, 0.8);
+}
+
+.carousel-nav.left {
+    left: 60px;
+}
+
+.carousel-nav.right {
+    right: 60px;
+}
+
+.movie-item {
+    position: relative;
+    min-width: 140px;
+    height: 210px;
+    border-radius: 8px;
+    overflow: visible;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-item:hover {
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+.movie-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.movie-item:hover img {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.movie-number {
+    position: absolute;
+    bottom: -20px;
+    left: -38px;
+    background: transparent;
+    color: black;
+    width: 80px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    font-weight: 600;
+    z-index: 3;
+    text-shadow:
+        -2px -2px 0 white,
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white,
+        -2px 0 0 white,
+        2px 0 0 white,
+        0 -2px 0 white,
+        0 2px 0 white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.reasons-section {
+    background-color: #000;
+    padding: 70px 0;
+    position: relative;
+    padding-top: 0px;
+}
+
+.reasons-header {
+    max-width: 86.25vw;
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+
+.reasons-header h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.reasons-grid {
+    max-width: 700vw;
+    margin: 0 auto;
+    padding: 0 86px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    transform: translateY(-30px);
+}
+
+.reason-card {
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-content {
+    flex: 1;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 60px;
+}
+
+.card-content h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    margin-top: 0;
+}
+
+.card-content p {
+    color: #b3b3b3;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.card-description {
+    color: #b3b3b3;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 1px;
+}
+
+.card-icon svg {
+    width: 80px;
+    height: 80px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 70px 0;
+    max-width: 86.25vw;
+    margin: 0 auto;
+    transform: translateY(-100px);
+}
+
+.faq h2 {
+    font-size: 28px;
+    font-weight: 450;
+    margin-bottom: 24px;
+    padding-left: 1px;
+    text-align: left;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.faq-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2px;
+}
+
+.faqbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 24px;
+    margin-bottom: 8px;
+    background-color: #2d2d2d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 80px;
+}
+
+.faqbox:hover {
+    background-color: #404040;
+}
+
+.faqbox span {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.faqbox svg {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.footer {
+    background-color: #000;
+    color: #b3b3b3;
+    padding: 70px 0 30px;
+    max-width: 86.25vw;
+    margin: 0 auto;
+    transform: translateY(-300px);
+}
+
+.footer-cta {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer-cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.footer-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-email input {
+    padding: 16px 10px 16px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(23, 23, 23, 0.85);
+    border: 1px solid #737373;
+    color: white;
+    width: 400px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    height: 52px;
+    box-sizing: border-box;
+}
+
+.footer-email input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-email button {
+    padding: 16px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 180px;
+    white-space: nowrap;
+    height: 52px;
+    box-sizing: border-box;
+}
+
+.footer-contact {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+.footer-contact a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+.footer-contact a:hover {
+    color: white;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-column a {
+    color: #b3b3b3;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-language {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.footer-language select {
+    background-color: rgba(23, 23, 23, 0.85);
+    color: #b3b3b3;
+    padding: 8px 35px 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    border: 1px solid #333;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+.footer-country {
+    padding-left: 20px;
+}
+
+.footer-country p {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    /* Reasons Section Mobile */
+    .reasons-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .reason-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px 24px;
+    }
+
+    .card-icon {
+        position: static;
+        margin-top: 24px;
+    }
+
+    .card-content {
+        padding-right: 0;
+        margin-bottom: 24px;
+        padding-bottom: 0;
+    }
+
+    .reasons-header h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    /* Hero Section Mobile */
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero span:nth-child(3),
+    .hero span:nth-child(4) {
+        font-size: 18px;
+    }
+    
+    .hero-btn {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .main input {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .btn-red {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    /* Navigation Mobile */
+    nav {
+        padding: 16px;
+        max-width: 100%;
+    }
+    
+    nav img {
+        height: 36px;
+    }
+    
+    .nav-btn {
+        gap: 6px;
+    }
+    
+    select.btn {
+        font-size: 14px;
+        min-width: 100px;
+    }
+    
+    .btn-red-sm {
+        font-size: 14px;
+        width: 70px;
+    }
+    
+    /* Trending Section Mobile */
+    .trending-header {
+        padding: 0 16px;
+    }
+    
+    .trending-header h1 {
+        font-size: 24px;
+    }
+    
+    .carousel-container {
+        max-width: 100%;
+        padding: 0 50px;
+    }
+    
+    .carousel-nav {
+        width: 24px;
+        height: 100px;
+        font-size: 18px;
+    }
+    
+    .carousel-nav.left {
+        left: 20px;
+    }
+    
+    .carousel-nav.right {
+        right: 20px;
+    }
+    
+    .movie-item {
+        min-width: 120px;
+        height: 180px;
+    }
+    
+    .movie-number {
+        font-size: 60px;
+        left: -30px;
+    }
+    
+    /* FAQ Mobile */
+    .faq {
+        padding: 50px 0;
+    }
+    
+    .faq h2 {
+        font-size: 24px;
+        text-align: center;
+        padding-left: 16px;
+    }
+    
+    .faqbox {
+        padding: 24px 16px;
+    }
+    
+    .faqbox span {
+        font-size: 20px;
+    }
+    
+    .faqbox svg {
+        width: 32px;
+        height: 32px;
+    }
+    
+    /* Footer Mobile */
+    .footer {
+        padding: 50px 0 20px;
+    }
+    
+    .footer-cta p {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .footer-contact {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 16px;
+    }
+    
+    .footer-column a {
+        font-size: 14px;
+    }
+    
+    .footer-language,
+    .footer-country {
+        padding-left: 16px;
+        text-align: center;
+    }
+    
+    .footer-email {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-email input {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .footer-email button {
+        width: 100%;
+        max-width: 200px;
+        white-space: nowrap;
+    }
+}
+
+/* Tablet and Medium Screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+    
+    .carousel-container {
+        max-width: 90vw;
+        padding: 0 80px;
+    }
+    
+    .movie-item {
+        min-width: 130px;
+        height: 195px;
+    }
+    
+    .reasons-grid {
+        max-width: 90vw;
+        gap: 16px;
+    }
+    
+    .reason-card {
+        padding: 28px;
+    }
+    
+    .card-content h2 {
+        font-size: 22px;
+    }
+    
+    .card-content p {
+        font-size: 16px;
+    }
+    
+    .faq-container {
+        max-width: 1200px;
+    }
+    
+    .faqbox span {
+        font-size: 24px;
+    }
+    
+    .footer-links {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+    
+    .footer-email input {
+        width: 400px;
+    }
+    
+    .footer-email button {
+        width: 180px;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .hero h1 {
+        font-size: 45px;
+    }
+    
+    .carousel-container {
+        max-width: 85vw;
+    }
+    
+    .reasons-grid {
+        max-width: 90vw;
+    }
+    
+    .faq-container {
+        max-width: 1300px;
+    }
+    
+    .footer-email input {
+        width: 500px;
+    }
+    
+    .footer-email button {
+        width: 200px;
+    }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1441px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+    
+    .carousel-container {
+        max-width: 80vw;
+    }
+    
+    .reasons-grid {
+        max-width: 86.25vw;
+    }
+    
+    .faq-container {
+        max-width: 1400px;
+    }
+    
+    .footer-email input {
+        width: 600px;
+    }
+    
+    .footer-email button {
+        width: 220px;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+    .hero {
+        padding: 0 16px;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero span:nth-child(3),
+    .hero span:nth-child(4) {
+        font-size: 16px;
+    }
+    
+    .main input {
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .btn-red {
+        font-size: 16px;
+        padding: 14px 30px;
+    }
+    
+    .carousel-container {
+        padding: 0 35px;
+    }
+    
+    .carousel-nav {
+        width: 20px;
+        height: 80px;
+        font-size: 14px;
+    }
+    
+    .carousel-nav.left {
+        left: 10px;
+    }
+    
+    .carousel-nav.right {
+        right: 10px;
+    }
+    
+    .movie-item {
+        min-width: 100px;
+        height: 150px;
+    }
+    
+    .movie-number {
+        font-size: 50px;
+        left: -25px;
+    }
+    
+    .movie-carousel {
+        gap: 30px;
+    }
+    
+    .reason-card {
+        padding: 20px;
+        min-height: 140px;
+    }
+    
+    .card-content h2 {
+        font-size: 20px;
+    }
+    
+    .card-content p {
+        font-size: 14px;
+    }
+    
+    .card-icon svg {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .faqbox {
+        padding: 20px 12px;
+    }
+    
+    .faqbox span {
+        font-size: 16px;
+    }
+    
+    .faqbox svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .footer-column a {
+        font-size: 13px;
+    }
+    
+    .footer-email input {
+        font-size: 14px;
+        max-width: 300px;
+    }
+    
+    .footer-email button {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+}
+
