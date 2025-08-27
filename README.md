@@ -41,3 +41,7 @@ Netflix/
 
 ## License
 This project is for educational and personal use only. Not affiliated with or endorsed by Netflix.
+
+## Author
+- Prince
+
